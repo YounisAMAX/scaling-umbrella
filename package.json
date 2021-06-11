@@ -2,13 +2,14 @@
   "name": "scaling-umbrella",
   "version": "1.0.0",
   "description": "Scaling umbrella code challenge",
-  "main": "scaling-umbrella.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YounisAMAX/scaling-umbrella.git"
+    "url": "git+https://github.com/YounisAMAX/scaling-umbrella.git"
   },
   "author": "Younes Lariani",
   "license": "ISC",
