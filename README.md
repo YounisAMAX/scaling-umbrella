@@ -23,3 +23,6 @@ Return a one-dimensional array arranged from elements of a square matrix in a sp
 - After the for loop, if ```moveY``` is set, then toggle ```switchMove```. Otherwise, decrement ```move```
 
 - Return ```newArray``` after the while loop ends
+
+## What could have been done differently
+- This assumes that the parameter is a 2-dimensional array with equal side lengths

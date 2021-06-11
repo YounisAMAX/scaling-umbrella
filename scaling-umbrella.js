@@ -1,6 +1,6 @@
 
 function arrange(array){
-    let len = array.length
+    let len = array.length;
 
     let totalLength = len * len;
 
