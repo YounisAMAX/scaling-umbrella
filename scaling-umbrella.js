@@ -14,7 +14,10 @@ function arrange(array){
     let moveY = false;
 
     // Starting cursor
-    let [curX, curY] = [-1, 0];
+    let cursor = {
+        x: -1,
+        y:  0
+    };
 
     // Initialize array
     const newArray = [];
@@ -23,13 +26,13 @@ function arrange(array){
     while (newArray.length < totalLength) {        
         for(let i = 0; i < move; i++){
             // Add one step to the cursor
-            // moveY flag disables curX when set,
-            // and disables curY when unset
-            curX += (1 - (2*switchMove)) * !moveY;
-            curY += (1 - (2*switchMove)) * moveY;
+            // moveY flag disables cursor.x when set,
+            // and disables cursor.y when unset
+            cursor.x += (1 - (2*switchMove)) * !moveY;
+            cursor.y += (1 - (2*switchMove)) *  moveY;
 
             // Push the new element from the cursor position
-            newArray.push(array[curY][curX]);
+            newArray.push(array[cursor.y][cursor.x]);
         }
 
         if (moveY)
