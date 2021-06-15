@@ -42,4 +42,9 @@ Initialize an array and construct a movement cursor. Initialize the movement cou
 - Return ```newArray``` after the while loop ends
 
 ## What could have been done differently
-- This assumes that the parameter is a square 2-dimensional array (square 2D matrix) with equal side lengths
+- This assumes that the parameter is a square 2-dimensional array (square 2D matrix) with equal side lengths. This code should have taken into account different lengths:
+    ```JS
+    const rows = Array.isArray(array)    ? array.length    : 0;
+    const cols = Array.isArray(array[0]) ? array[0].length : 0;
+    ```
+- Should have attempted the recursive approach.
